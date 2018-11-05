@@ -70,10 +70,9 @@ div.localmessage {
     margin-top: 50px;
     color: white;
     text-transform: none;
-    grid-area: localmessage;
     box-shadow: 0 0px 50px 0 rgba(255,255,255,0.3), 0 0px 200px 0 rgba(255,255,255,0.3);
-    padding: 25px
-    
+    padding: 25px;
+    grid-area: localmessage;
 }
 
 div.localmessage a {
