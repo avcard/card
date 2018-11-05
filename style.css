@@ -62,7 +62,7 @@ div.card2 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 75% 25%;
-    grid-gap: 0.8em;
+    grid-gap: 10px;
     grid-area: card2;
 }
 
@@ -107,7 +107,7 @@ td {
 }
 
 .heading {
-    font-size: 1em;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -118,13 +118,9 @@ td {
 ul.general {
     list-style: none;
     padding-left: 0;
-    font-size: 0.85em;
+    font-size: 13px;
     margin-top: 2px;
 }​
-
-ul.refe {
-    font-size: 36px;
-}
 
 .left-column {
     width: 37%;
