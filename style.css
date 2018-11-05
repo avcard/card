@@ -21,16 +21,11 @@ a:hover {
     justify-content: center;
 }
  
- 
- div.wrapper {
-     width: 100%;
-     padding-bottom: 154%;
- }
- 
 div.card {
-    width: 595px;
-    height: 385px;
+    width: 545px;
+    height: 335px;
     box-shadow: 0 0px 50px 0 rgba(255,255,255,0.5), 0 0px 200px 0 rgba(255,255,255,0.5);
+    padding: 25px
 }
 
 div.card1 {
@@ -42,10 +37,26 @@ div.card1 {
 div.card2 {
     color: black;
     background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75% 25%;
+    grid-gap: 0.8em
+}
+
+div.card2upper {
+    display: grid;
+    grid-template-columns: 37% 63%;
+    grid-template-rows: 1fr 1fr;
+}
+
+div.cell {
+    /*border: 1px solid red;*/
 }
 
 div.footer {
-    color: red;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
 }
 
 table {
