@@ -3,7 +3,10 @@ body {
     background-color: black;
     text-transform: uppercase;
     font-family: sans;
-    min-width: 800;
+    min-width: 700;
+    height: 100vh;
+    width: 100vw;
+    /*transform: scale(0.4);*/
 }
 
 a {
@@ -17,8 +20,10 @@ a:hover {
 }
 
 div.container {
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-rows: 25px 385px 385px 1fr;
+    grid-template-rows: 1fr 385px 385px 1fr;
     grid-template-columns: 1fr 595px 1fr;
     grid-gap: 50px;
     grid-template-areas:
