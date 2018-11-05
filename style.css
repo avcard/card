@@ -1,8 +1,9 @@
 body {
-    color: black; 
+    color: white; 
     background-color: black;
     text-transform: uppercase;
     font-family: sans;
+    min-width: 700;
 }
 
 a {
@@ -17,10 +18,11 @@ a:hover {
 
 div.container {
     display: grid;
-    grid-template-rows: 385px 385px 1fr;
-    grid-template-columns: 1fr 585px 1fr;
+    grid-template-rows: 25px 385px 385px 1fr;
+    grid-template-columns: 1fr 595px 1fr;
     grid-gap: 50px;
     grid-template-areas:
+    ". . ."
     ". card1 ."
     ". card2 ."
     ". localmessage ."
