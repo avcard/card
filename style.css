@@ -17,20 +17,33 @@ a:hover {
 
 div.container {
     display: grid;
-    height: 100vh;
-    grid-template-rows: 1fr 385px 3fr;
-    grid-template-columns: 1fr 595px 595px 1fr;
+    grid-template-rows: 385px 385px 1fr;
+    grid-template-columns: 1fr 585px 1fr;
     grid-gap: 50px;
     grid-template-areas:
-    '. . . .'
-    '. card1 card2 .'
-    '. . . .';
+    ". card1 ."
+    ". card2 ."
+    ". localmessage ."
+}
+
+@media screen and (min-width: 1200px) {
+    div.container {
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr 385px 3fr;
+        grid-template-columns: 1fr 595px 595px 1fr;
+        grid-gap: 50px;
+        grid-template-areas:
+        '. . . .'
+        '. card1 card2 .'
+        '. localmessage localmessage .';
+    }
 }
 
 div.container > div {
     /*border: 2px solid red*/
 }
- 
+
 div.card {
     box-shadow: 0 0px 50px 0 rgba(255,255,255,0.5), 0 0px 200px 0 rgba(255,255,255,0.5);
     padding: 25px
@@ -51,6 +64,18 @@ div.card2 {
     grid-template-rows: 75% 25%;
     grid-gap: 0.8em;
     grid-area: card2;
+}
+
+div.localmessage {
+    margin-top: 50px;
+    color: white;
+    text-transform: none;
+    grid-area: localmessage;
+}
+
+div.localmessage a {
+    color: white;
+    text-decoration: underline;
 }
 
 div.card2upper {
@@ -74,8 +99,8 @@ table {
 }
 
 td {
-     /*border: 1px solid black;*/
-     vertical-align: top;
+    /*border: 1px solid black;*/
+    vertical-align: top;
 }
 
 .heading {
