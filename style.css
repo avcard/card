@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "LeagueGothic";
+  src: url("LeagueGothic-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Signika";
+    src: url("Fonts/Signika-SemiBold.ttf");
+}
+
 body {
     color: white; 
     background-color: black;
     text-transform: uppercase;
-    font-family: sans;
+    font-family: Signika, sans;
     min-width: 700;
     height: 100vh;
     width: 100vw;
@@ -17,6 +27,15 @@ a:hover {
     color: white;
     background-color: black;
 }
+
+/*a::after {
+    display: inline-block;
+    background: url("external.svg");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    content: "";
+    width: 12px;
+}*/
 
 div.container {
     height: 100vh;
@@ -56,9 +75,12 @@ div.card {
 }
 
 div.card1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 1fr;
+    /*grid-gap: 10px;*/
     grid-area: card1;
 }
 
@@ -67,8 +89,8 @@ div.card2 {
     background-color: white;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 75% 25%;
-    grid-gap: 10px;
+    grid-template-rows: 20% 1fr;
+    /*grid-gap: 10px;*/
     grid-area: card2;
 }
 
@@ -87,12 +109,10 @@ div.localmessage a {
 }
 
 div.card2upper {
-    display: grid;
-    grid-template-columns: 37% 63%;
-    grid-template-rows: 1fr 1fr;
+    
 }
 
-div.cell {
+div.cell:hover {
     /*border: 1px solid red;*/
 }
 
@@ -116,16 +136,38 @@ td {
     font-weight: bold;
 }
 
+h1 {
+    font-family: "Signika", sans;
+    /*color: white;*/
+    /*background-color: lightblue;*/
+    font-size: 40px;
+    margin: 0;
+}
+
 .author {
     color: #a0a0a0;
+    font-size: 14px;
+    text-transform: none;
 }
 
 ul.general {
     list-style: none;
     padding-left: 0;
-    font-size: 13px;
+    font-size: 18px;
     margin-top: 2px;
 }​
+
+li {
+    
+}
+
+ul.general li {
+    padding: 0 0 6px 0;
+}
+
+li::before {
+    /*content: '\25BA';*/
+}
 
 .left-column {
     width: 37%;
@@ -142,4 +184,18 @@ img.externallink {
 
 img.icon {
     width: 1.3em;
+}
+
+div.youtube {
+    display: inline-block;
+}
+
+div.youtube::hover {
+    background-color: black;
+    color: white;
+}
+
+div.youtube img {
+    width: 80px;
+    vertical-align: middle;
 }
