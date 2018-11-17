@@ -122,15 +122,6 @@ div.footer {
     grid-template-rows: 1fr;
 }
 
-table {
-    margin: 25px;
-}
-
-td {
-    /*border: 1px solid black;*/
-    vertical-align: top;
-}
-
 .heading {
     font-size: 15px;
     font-weight: bold;
@@ -161,6 +152,10 @@ li {
     
 }
 
+div.card2 ul li {
+    padding: 0 0 12px 0;
+}
+
 ul.general li {
     padding: 0 0 6px 0;
 }
@@ -187,15 +182,52 @@ img.icon {
 }
 
 div.youtube {
-    display: inline-block;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 1fr;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "thumbnail text"
+}
+
+div.link {
+    display: grid;
+    background-color: white;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30px 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "icon text"
+}
+
+div.thumbnail {
+    grid-area: thumbnail;
+    horizontal-align: 1;
+}
+
+div.icon {
+    grid-area: icon;
+}
+
+div.youtube div.text {
+    grid-area: text;
+}
+
+div.link div.text {
+    grid-area: text;
 }
 
 div.youtube::hover {
     background-color: black;
     color: white;
+    width: 70%
 }
 
 div.youtube img {
-    width: 80px;
-    vertical-align: middle;
+    width: 100%;
+}
+
+div.link img {
+    width: 100%
 }
