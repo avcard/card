@@ -51,13 +51,14 @@ div.headerdiv {
 /* Mobile */
 div.container {
     display: grid;
-    grid-template-rows: 385px 30px auto 385px 30px auto 1fr;
+    grid-template-rows: 385px 30px auto 50px 385px 30px auto 1fr;
     grid-template-columns: 1fr 595px 1fr;
     grid-row-gap: 0px;
     grid-template-areas:
     ". card1 ."
     ". control1 ."
     ". card3 ."
+    ". . ."
     ". card2 ."
     ". control2 ."
     ". card4 ."
@@ -140,6 +141,9 @@ div.localmessage a {
 #card3 {
     display: none;
     margin-bottom: 50px;
+}
+
+#card2 {
 }
 
 div.card2upper {
